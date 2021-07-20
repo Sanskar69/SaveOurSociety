@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+:root{
+    --main-bg : #1e272e;
+    --main-color : #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar a > img{
+    position: relative;
+    top: -4px;
+    width: 19px;
+    margin-right: 5px;
+}
+.navbar{
+    background-color: var(--main-bg);
+    padding: 2rem 0 ;
+}
+.navbar a{
+    color:white;
+    font-size: 1.8rem;
+}
+.navbar a:hover{
+    color : var(--main-color);
+}
+.navbar li{
+    padding: 0 2rem;
+}
+.navbar-toggler {
+    background-color: #ffffff0f;
+    border: 1px solid var(--main-color);
+}
+.fa-snowflake{
+    transition:all linear;
+    animation: rot 3s linear infinite;
+    color: var(--main-color);
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* header */
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    font-size: 1.5rem;
+    color: white;
+    word-spacing: .5rem;
+    margin-top: auto;
+}
+footer a{
+    color: #fff;
+}
+
+/* responsive code */
+
+@media (max-width: 768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin: 5rem 0;
+    }
+}
+
+/* error page  */
+.errIMG img{
+    height:30rem;
+}
+.err{
+    text-align: center;
+}
+.err p{
+    font-size: 1.5rem;
+}
+.err h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.err button{
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+.main_header_right{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+@media(max-width : 780px){
+    .errIMG img{
+        height:25rem;
+    }
+    .err p{
+        font-size: 1.4rem;
+    }
+    .err h1{
+        font-size: 3.3rem;
+        font-weight: 600;
+    }    
+    .col-12{
+        max-width:90% ;
+    }
+    .row{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:350px){
+    .errIMG img{
+        height:18rem;
+    }
+    .navbar a{
+        color:white;
+        font-size: 1.5rem;
+    }    
+}
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */

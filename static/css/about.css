@@ -1,0 +1,148 @@
+:root{
+    --main-bg : #1e272e;
+    --main-color : #0097e6;
+}
+
+.jumbotron{
+    height: 35rem;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--main-bg);
+}
+.backgroud{
+    margin-bottom: 4rem;
+}
+.backgroud::before{
+    position:absolute;
+    content: "";
+    background-image: url('../images/about.jpg');
+    background-size: cover;
+    opacity: 0.3;
+    height: 65rem;
+    width: 100%;
+    top: 0;
+    background-attachment: fixed;
+}
+.jumbotron h1{
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+.jumbotron h1:hover{
+    color: var(--main-color)
+}
+
+.jumbotron .utility{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.jumbotron .intro{
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.card img{
+    height: 40rem;
+}
+.media img{
+    height: 28rem;
+}
+
+.shadow{
+    box-shadow: 3px 3px 2px #000;
+    margin:0rem 0 4rem 0;
+}
+.shadow a{
+    font-size: 3rem;
+}
+.shadow p{
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.media-body {
+    padding-left: 2rem;
+}
+.media-body button{
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.media-body a{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+.media-body p{
+    padding-top: 1rem;
+    padding-right: 3rem;
+}
+.media-body h1{
+    color: var(--main-bg);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+
+.media{
+    display: flex;
+}
+@media (max-width:1500px){
+    .media img {
+        height: 25rem;
+        margin: 1rem;
+        border: 2px solid var(--main-color);
+        justify-content: center;
+    }    
+}
+@media (max-width: 1050px){
+    .media{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 460px){
+    .jumbotron h1{
+        font-weight: 900;
+        font-size: 3.5rem;
+    }    
+    .jumbotron .utility{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .jumbotron .intro{
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .card img{
+        height: 30rem;
+    }    
+}
+@media (max-width: 350px){
+    .jumbotron h1{
+        font-weight: 900;
+        font-size: 2.5rem;
+    }    
+    .jumbotron .utility{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .jumbotron .intro{
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .media img {
+        height: 20rem;
+        margin: 1rem;
+        border: 2px solid var(--main-color);
+        justify-content: center;
+    }    
+    .card img{
+        height: 20rem;
+    }    
+
+}

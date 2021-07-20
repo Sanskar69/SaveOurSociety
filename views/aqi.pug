@@ -1,0 +1,133 @@
+extends base.pug
+
+
+block style
+    <link rel="stylesheet" href="../static/css/aqi.css">
+
+block body
+        <div class="container-fluid ">
+            <div class="row">
+                <div class = "col-md-10 col-12 mx-auto">
+
+                    <div class="main_content">
+                        <form action="" class="temp_form">
+                            <input type="text" id="cityName" placeholder="enter the name of the city!" autocomplete="off">
+                            <input type="submit" id="submitBTN" value="search">
+                        </form>
+                    </div>
+                    <div class="tempINFO">
+                        <div class="top_layer">
+                            <p id="day">Date</p>
+                        </div>
+                        <div class="main_layer">
+                            <p id="city">The AQI Will Be Displayed Here!</p>
+                            <div class="middle_layer ">
+                                <p id="aqi"><span>0</span></p>
+                                <p id="aqi_status"> <i class="fa fa-heart" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>What is AQI ?</h1>
+                            <p>AQI stands for Air Quality Index. Think of the AQI as a yardstick that runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern.</p>
+                            <p>AQI is an estimate of air pollution levels, including particles and ozone. Breathing in air pollution for more than a few weeks can lead to strokes, chronic lung problems, lung cancer and even early death.</p>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <img src="../static/images/aqi.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <i class="fas fa-circle" style="color: #8aff82;"></i>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>AQI range : 0-50</h1>
+                            <p><span><b> Status : </b></span> Good</p>
+                            <p><span><b>Associated Health Impacts : </b></span> Minimal Impact</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <i class="fas fa-circle" style="color: #209618;"></i>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>AQI range : 51-100</h1>
+                            <p><span><b> Status : </b></span> Satisfactory</p>
+                            <p><span><b>Associated Health Impacts : </b></span> May cause minor breathing discomfort to sensitive people.</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <i class="fas fa-circle" style="color: #e0d463;"></i>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>AQI range : 101-200</h1>
+                            <p><span><b> Status : </b></span> Moderately polluted </p>
+                            <p><span><b>Associated Health Impacts : </b></span> May cause breathing discomfort to people with lung disease such as asthma, and discomfort to people with heart disease, children and older adults.</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <i class="fas fa-circle" style="color: #ff9029;"></i>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>AQI range : 201-300</h1>
+                            <p><span><b> Status : </b></span> Poor </p>
+                            <p><span><b>Associated Health Impacts : </b></span> May cause breathing discomfort to people on prolonged exposure, and discomfort to people with heart disease.</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <i class="fas fa-circle" style="color: #ff674f;"></i>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>AQI range : 301-400</h1>
+                            <p><span><b> Status : </b></span> Very Poor</p>
+                            <p><span><b>Associated Health Impacts : </b></span> May cause respiratory illness to the people on prolonged exposure. Effect may be more pronounced in people with lung and heart diseases.</p>
+                        </div>
+                    </div>
+
+
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <i class="fas fa-circle" style="color: #ff2200;"></i>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>AQI range : 401-500</h1>
+                            <p><span><b> Status : </b></span> Severe </p>
+                            <p><span><b>Associated Health Impacts : </b></span> May cause respiratory impact even on healthy people, and serious health impacts on people with lung/heart disease. The health impacts may be experienced even during light physical activity.</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+block script
+    <script src="../static/js/aqi.js"></script>

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.temp_form{
+    width:60%;
+    position:relative;
+    margin: 10rem auto 6rem;
+}
+
+.temp_form input[type="text"] {
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+::placeholder{
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top:5px;
+    right:5px;
+    bottom:5px;
+    border:none;
+    background: #009ad8;
+    padding:0 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover{
+    color:#009ad8 ;
+    background-color: #fff;
+}
+
+.tempINFO{
+    width: 40rem;
+    margin:auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10rem;
+}
+
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.top_layer p{
+    color: #fff;
+    font-weight: 400;
+    padding: 2rem ;
+    font-size: 1.7rem;
+    word-spacing: 0.5rem;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem ;
+}
+
+.main_layer #city{
+    padding: 2rem 0.25rem;
+    color: #bfc1c8;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.main_layer .middle_layer{
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+}
+.main_layer .middle_layer p , .main_layer .middle_layer .fa {
+    font-size: 5.8rem;
+    font-weight: 900;
+}
+
+.fa{
+    color: #009ad8
+}
+
+sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.data-hide{
+    visibility: hidden;
+    transition: all .1s linear;
+}
+
+@media (max-width:700px){
+    .temp_form input[type="text"] {
+        font-size: 1.2rem;
+        border-radius: 3rem;
+    }
+    .temp_form input[type="submit"]{
+        padding:0 2rem;
+        font-size: 1.3rem;
+    }    
+
+}
+@media (max-width:500px){
+    .temp_form input[type="text"] {
+        font-size: 1.1rem;
+        border-radius: 3rem;
+    }
+    .temp_form input[type="submit"]{
+        padding:0 1rem;
+        font-size: 1rem;
+    }    
+    .tempINFO{
+        width: 30rem;
+    }    
+    .main_layer .middle_layer p, .main_layer .middle_layer .fa {
+        font-size: 5rem;
+        font-weight: 900;
+    }
+    sup{
+        font-size: 5rem;
+        margin-top: -2rem;
+    }    
+}
+@media (max-width:410px){
+    .temp_form input[type="text"] {
+        font-size: 1.1rem;
+        border-radius: 3rem;
+    }
+    .temp_form input[type="submit"]{
+        padding:0 1rem;
+        font-size: 1rem;
+    }    
+    .tempINFO{
+        width: 25rem;
+    }    
+    .temp_form{
+        width:80%;
+    }
+    .main_layer .middle_layer p, .main_layer .middle_layer .fa {
+        font-size: 3.8rem;
+        font-weight: 900;
+    }
+    sup{
+        font-size: 3.5rem;
+        margin-top: -2rem;
+    }    
+}
+
+.aqi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.aqi h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0 2rem 0;
+}
+.aqi p{
+    font-size: 1.8rem;
+    padding: 1rem 0 0rem 0;
+    font-weight: 400;
+}
+.aqiImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aqiImg img{
+    height: 25rem;
+}
+.aqiImg i{
+    font-size: 20rem;
+}
+.row2{
+    padding-top: 8rem;
+    padding-bottom:8rem;
+}
+
+@media (max-width:320px){
+    .tempINFO{
+        width: 20rem;
+    }    
+    .temp_form{
+        width:90%;
+    }
+    .main_layer .middle_layer p, .main_layer .middle_layer .fa {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    sup{
+        font-size: 2.5rem;
+        margin-top: -2rem;
+    }
+    
+}
+
+@media (max-width:1400px){
+    .aqiImg img{
+        height: 20rem;
+    }
+    .aqiImg i{
+        font-size: 18rem;
+    }    
+}
+
+@media (max-width: 768px){
+    .aqi{
+        align-items: center;
+    }
+    .row2{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .aqiImg img{
+        height: 16rem;
+        padding-top: 2rem;
+    }
+    .aqiImg i{
+        font-size: 14rem;
+        padding-bottom: 2rem;
+    }    
+    .aqi h1{
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 1rem 0 2rem 0;
+        text-align: center;
+    }
+    .aqi p{
+        font-size: 1.4rem;
+        padding: 1rem 0 0rem 0;
+        font-weight: 400;
+        text-align: center;
+    }    
+}
+

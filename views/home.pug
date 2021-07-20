@@ -1,0 +1,206 @@
+extends base.pug
+
+block script
+    <script src="../static/js/home.js"></script>
+
+block style
+    <link rel="stylesheet" href="../static/css/home.css">
+
+block body
+        <div class="container-fluid main_header">
+            <div class="row">
+                <div class = "col-md-10 col-12 mx-auto">
+                    <div class = "row">
+                        <!-- left div -->
+                        <div class = "col-md-6 col-12 main_header_right">
+                            <h1>Save Our Society</h1>
+                            <p>Glaciers are melting, sea levels are rising, cloud forests are dying, and wildlife is scrambling to keep pace.</p>
+                            <p><span><a href="/"> Save Our Society</a></span> is a Web-page to remind how humans have increased the average temperature of earth by increasing the level of Green house gases. </p>
+                            <p>The excess heat in the atmosphere has caused the average global temperature to rise overtime.</p>
+                            <p>Checkout <span> <a href="/weather">Weather</a> </span> and <span> <a href="/aqi">AQI</a></span>  of your city!</p>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-6 col-12 main_header_left">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../static/images/img1.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../static/images/img2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../static/images/img3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../static/images/img4.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../static/images/img5.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-10 col-12 mx-auto">
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-6 col-12 gw">
+                            <img src="../static/images/gw2.png" alt="">
+                            <h1>GLOBAL WARMING</h1>
+                            <p>Global warming is the long-term warming of the planet’s overall temperature. Though this warming trend has been going on for a long time, its pace has significantly increased in the last hundred years.</p>
+                            <p>The greenhouse effect is when the Sun’s rays penetrate the atmosphere, but when that heat is reflected off the surface cannot escape back into space which increases overall temperature of the planet. </p>
+                            <p>Burning of fossil fuels prevent the heat from leaving the atmosphere.</p>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-6 col-12 cc">
+                            <img src="../static/images/cc.png" alt="">
+                            <h1>CLIMATE CHANGE</h1>
+                            <p>Global warming has presented another issue called climate change. Climate change refers to changes in weather patterns and growing seasons around the world. It also refers to sea level rise caused by the expansion of warmer seas and melting ice sheets and glaciers.</p>
+                            <p>Global warming causes climate change, which poses a serious threat to life on earth in the forms of widespread flooding and extreme weather. </p>
+                            <p>Climate change is changing the way we interact with our environments. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-10 col-12 mx-auto">
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <img src="../static/images/ghe.png" alt="">
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>What is Green House Effect?</h1>
+                            <p>The greenhouse effect is when the Sun’s rays penetrate the atmosphere, but when that heat is reflected off the surface cannot escape back into space. </p>
+                            <p>Gases produced by the burning of fossil fuels prevent the heat from leaving the atmosphere. These greenhouse gasses are carbon dioxide, chlorofluorocarbons, water vapor, methane, and nitrous oxide. </p>
+                            <p>The excess heat in the atmosphere has caused the average global temperature to rise overtime.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class = "col-md-10 col-12 mx-auto">
+                    <div class = "row row2">
+                        <!-- left div -->
+                        <div class = "col-md-8 col-12 aqi">
+                            <h1>What is AQI ?</h1>
+                            <p>AQI stands for Air Quality Index. Think of the AQI as a yardstick that runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern.</p>
+                            <p>AQI is an estimate of air pollution levels, including particles and ozone. Breathing in air pollution for more than a few weeks can lead to strokes, chronic lung problems, lung cancer and even early death.</p>
+                        </div>
+                        <!-- right div -->
+                        <div class = "col-md-4 col-12 aqiImg ">
+                            <img src="../static/images/aqi.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-10 col-12 mx-auto">
+                    <div class = "row row2">
+                        <div class="center">
+                            <h1>Why Does This Matter?</h1>
+                            <p>The rapid rise in greenhouse gases is a problem because it’s changing the climate faster than some living things can adapt to. Also, a new and more unpredictable climate poses unique challenges to all life.</p>
+                            <p>With concentrations of greenhouse gases rising, Earth's remaining ice sheets such as Greenland and Antarctica are starting to melt too. That extra water could raise sea levels significantly, and quickly. By 2050, sea levels are predicted to rise between one and 2.3 feet as glaciers melt.</p>
+                            <p>As the mercury rises, the climate can change in unexpected ways. In addition to sea levels rising, weather can become more extreme. </p>
+                            <p id='hid'>
+                                |This means -
+                                <ul>
+                                    <li>More intense major storms.</li>
+                                    <li>More rain followed by longer and drier droughts.</li>
+                                    <li>A challenge for growing crops.</li>
+                                    <li>Changes in the ranges in which plants and animals can live.</li>
+                                    <li>Loss of water supplies that have historically come from glaciers.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-10 col-12 mx-auto">
+                    <div class = "row row2">
+                        <div class="center">
+                            <h1>How You Can Stop Global Warming !</h1>
+                            <p>Nations around the world are upping their game in the fight against climate change.</p>
+                            <p>It’s important to remember the equally vital contributions that can be made by private citizens—which is to say, by you. “Change only happens when individuals take action,” Aliya Haq, deputy director of NRDC’s Clean Power Plan initiative, says. “There’s no other way, if it doesn’t start with people.”</p>
+                            <p>The goal is simple. Carbon dioxide is the climate’s worst enemy. By reducing it, we can curb our own contribution to climate change while also saving money. Few ways are listed below. </p>
+                            <br>
+                            <br>
+                            <br>
+                            <h2>1. Speak Up!</h2>
+                            <div class = "row ways">
+                                <!-- left div -->
+                                <div class = "col-md-8 col-12 ">
+                                    <p>What’s the single biggest way you can make an impact on global climate change? By voicing your concerns—via social media or, better yet, directly to your elected officials—you send a message that you care about the warming world. </p>
+                                    <p>Encourage Government to enact new laws that limit carbon emissions and require polluters to pay for the emissions they produce.</p>
+                                </div>
+                                <!-- right div -->
+                                <div class = "col-md-4 col-12 waysImg ">
+                                    <img src="../static/images/speak_up.png" alt="">
+                                </div>
+                            </div>
+                            <h2>2. Power Your Home With Renewable Energy.</h2>
+                            <div class = "row ways">
+                                <!-- left div -->
+                                <div class = "col-md-8 col-12 ">
+                                    <p>Choose a utility company that generates at least half its power from wind or solar and has been certified by Green-e Energy, an organization that vets renewable energy options.</p>
+                                    <p>This means challenging the fossil fuel industry’s dangerous and outdated plans while also pushing for smart, sustainable policies that encourage new wind and solar projects.</p>
+                                </div>
+                                <!-- right div -->
+                                <div class = "col-md-4 col-12 waysImg ">
+                                    <img src="../static/images/RE.png" alt="">
+                                </div>
+                            </div>
+                            <h2>3. Embrace Natural Climate Solutions. </h2>
+                            <div class = "row ways">
+                                <!-- left div -->
+                                <div class = "col-md-8 col-12 ">
+                                    <p>Carbon-capturing forests, soils, oceans, and freshwater systems are some of our most effective tools in fighting climate change. </p>
+                                    <p>Protecting them not only boosts the resiliency of ecosystems but strengthens local communities against the challenges of extreme weather.</p>
+                                    <p>We need to encourage regenerative farming practices and protect at least 30 percent of our lands and waters by 2030—following the lead of Indigenous people who’ve done this for millennia.</p>
+                                </div>
+                                <!-- right div -->
+                                <div class = "col-md-4 col-12 waysImg ">
+                                    <img src="../static/images/eco.png" alt="">
+                                </div>
+                            </div>
+                            <h2>4. Shrink Your Carbon Profile. </h2>
+                            <div class = "row ways">
+                                <!-- left div -->
+                                <div class = "col-md-8 col-12 ">
+                                    <p>You can offset the carbon you produce by purchasing carbon offsets, which represent clean power that you can add to the nation’s energy grid in place of power from fossil fuels.</p>
+                                    <p>But not all carbon offset companies are alike. Do your homework to find the best supplier.</p>
+                                </div>
+                                <!-- right div -->
+                                <div class = "col-md-4 col-12 waysImg ">
+                                    <img src="../static/images/carbon.png" alt="">
+                                </div>
+                            </div>
+                            <h2>5. Buy Better Bulbs. </h2>
+                            <div class = "row ways">
+                                <!-- left div -->
+                                <div class = "col-md-8 col-12 ">
+                                    <p>LED lightbulbs use up to 80 percent less energy than conventional incandescents.</p>
+                                    <p>They’re also cheaper in the long run: A 10-watt LED that replaces your traditional 60-watt bulb will save you $125 over the lightbulb’s life.</p>
+                                </div>
+                                <!-- right div -->
+                                <div class = "col-md-4 col-12 waysImg ">
+                                    <img src="../static/images/bulb.png" alt="">
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+
+
